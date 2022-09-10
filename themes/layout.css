@@ -1,0 +1,235 @@
+:root {
+    --darkgrey: #111111;
+    --black: #000000;
+    --white: #ffffff;
+    --green: #0AE600;
+    --darkgreen: #08AD00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--white);
+}
+
+    .link:hover {
+        color: var(--green);
+    }
+
+.contrast-link {
+    text-decoration: none;
+    color: var(--green);
+}
+
+    .contrast-link:hover {
+        color: var(--white);
+        background-color: var(--green);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+.nav-bar-container {
+    padding-left: 15%;
+    background-color: var(--darkgrey);
+}
+
+.nav-bar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list-item, .list-item-resume {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.list-item-resume {
+    background-color: var(--green);
+    color: var(--black);
+    border-radius: 3px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .list-item-resume:hover {
+        background-color: var(--darkgreen);
+        color: var(--white);
+    }
+
+.header {
+    margin-left: 15%;
+    padding-top: 100px;
+}
+
+.content {
+    background-color: black;
+    height: 500px;
+    color: white;
+}
+
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0AE600;
+}
+
+.text1 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 30%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.digitazon {
+    color: rgb(241, 181, 241);
+}
+/*inizia 'progetti piu importanti'*/
+.projects {
+    background-color: rgb(95, 46, 110);
+    height: 1600px;
+}
+
+.projects-item {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 35px;
+}
+
+.description {
+    text-align: end;
+    padding-top: 50px;
+}
+
+.project1 {
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.project-description {
+    text-align: right;
+    background-color: rgb(58, 25, 92);
+    color: white;
+    width: fit-content;
+    inline-size: 900px;
+    float: right;
+    border-radius: 20px;
+    margin-right: 20px;
+    border: 5px solid rgb(58, 25, 92);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.tecno {
+    text-align: right;
+    margin-top: 90px;
+    margin-right: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.img {
+    width: 600px;
+    position: absolute;
+    top: 750px;
+    margin-left: 20px;
+    border-radius: 6%;
+    box-shadow: 10px 10px rgb(95, 21, 93);
+    z-index: 0;
+}
+
+.bootcamp {
+    margin-top: 19%;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.feed {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(31, 9, 51);
+}
+
+.img1 {
+    position: absolute;
+    top: 1400px;
+    left: 30px;
+    border-radius: 6%;
+}
+
+
+.footer {
+    background-color: var(--darkgrey);
+    height: 400px;
+}
+
+
+.footer-layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    margin-left: 33%;
+    width: 400px;
+}
+
+.footer-text {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.image-animation {
+    cursor: pointer;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+
+    .image-animation:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }

@@ -8,12 +8,11 @@
 
 * {
     margin: 0;
-    padding: 0;
 }
 
 .page-layout {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 50px auto auto;
 }
 
 .link {
@@ -38,16 +37,14 @@
     }
 
 .nav-bar-container {
-    padding-left: 15%;
+    padding-left: 7%;
+    padding-top: 5px;
     background-color: var(--darkgrey);
 }
 
 .nav-bar {
     color: white;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
 }
 
 .nav-list {
@@ -56,35 +53,36 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.list-item, .list-item-resume {
+.list-item, .list-item-selected {
     margin: 10px;
     cursor: pointer;
 }
 
-.list-item-resume {
+.list-item-selected {
     background-color: var(--green);
     color: var(--black);
     border-radius: 3px;
-    width: 70px;
-    height: 20px;
     text-align: center;
     font-weight: bold;
+    padding-left:5px;
+    padding-right:5px;
 }
 
-    .list-item-resume:hover {
+    .list-item-selected:hover {
         background-color: var(--darkgreen);
         color: var(--white);
     }
 
 .header {
-    margin-left: 15%;
-    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .content {
     background-color: black;
-    height: 500px;
     color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .text {
@@ -202,9 +200,16 @@ h2 {
 
 .footer {
     background-color: var(--darkgrey);
-    height: 400px;
 }
 
+.footer-margin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .footer-layout {
     display: grid;
@@ -212,15 +217,12 @@ h2 {
     grid-template-rows: auto auto;
     justify-items: center;
     align-items: center;
-    margin-left: 33%;
-    width: 400px;
 }
 
 .footer-text {
     grid-column-start: 1;
     grid-column-end: 4;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .image-animation {

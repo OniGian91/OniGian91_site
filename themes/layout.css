@@ -6,7 +6,7 @@
 }
 /*Base style*/
 * {
-    position:relative;
+    position: relative;
     margin: 0;
 }
 
@@ -117,7 +117,32 @@ a {
         -webkit-transform: rotate(360deg);
     }
 
+/* resume.html*/
+.resume-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-row-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.resume-description-border
+{
+    border-left: 2px solid green;
+    padding-left:10px;
+}
+.resume-image {
+    cursor: pointer;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    height: 50px;
+    width: 50px;
+    border-radius:5px;
+}
 
+    .resume-image:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
 
 /*Landscape phone to portrait tablet/
 Landscape phones and down*/
@@ -128,5 +153,10 @@ Landscape phones and down*/
 
     .nav-bar {
         margin: 8px 5% 0 5%;
+    }
+
+    .resume-container {
+        display: grid;
+        grid-template-columns: 20% 80%;
     }
 }

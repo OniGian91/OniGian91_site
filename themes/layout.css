@@ -1,13 +1,18 @@
 :root {
-    --darkgrey: #111111;
-    --black: #000000;
-    --white: #ffffff;
-    --green: #0AE600;
-    --darkgreen: #08AD00;
+    --base-color: #111111;
+    --base-contrast-color: #000000;
+    --text-color: #ffffff;
+    --text-constrat-color: #0AE600;
+}
+/*Base style*/
+* {
+    position:relative;
+    margin: 0;
 }
 
-* {
-    margin: 0;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .page-layout {
@@ -15,42 +20,21 @@
     grid-template-rows: 50px auto auto;
 }
 
-.link {
-    text-decoration: none;
-    color: var(--white);
-}
-
-    .link:hover {
-        color: var(--green);
-    }
-
-.contrast-link {
-    text-decoration: none;
-    color: var(--green);
-}
-
-    .contrast-link:hover {
-        color: var(--white);
-        background-color: var(--green);
-        border-radius: 5px;
-        padding: 5px;
-    }
-
-.nav-bar-container {
-    padding-left: 7%;
-    padding-top: 5px;
-    background-color: var(--darkgrey);
+/*Top-Menu style*/
+.top-menu-container {
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .nav-bar {
-    color: white;
     display: flex;
+    margin: 5px 5% 0 5%;
 }
 
 .nav-list {
     list-style-type: none;
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .list-item, .list-item-selected {
@@ -59,179 +43,90 @@
 }
 
 .list-item-selected {
-    background-color: var(--green);
-    color: var(--black);
+    background-color: var(--text-constrat-color);
+    color: var(--base-contrast-color);
     border-radius: 3px;
-    text-align: center;
     font-weight: bold;
-    padding-left:5px;
-    padding-right:5px;
+    padding: 0 5px;
 }
 
-    .list-item-selected:hover {
-        background-color: var(--darkgreen);
-        color: var(--white);
-    }
-
-.header {
-    margin-left: 10%;
-    margin-right: 10%;
+.list-item:hover {
+    color: var(--text-constrat-color);
+    border-radius: 5px;
 }
 
-.content {
-    background-color: black;
-    color: white;
+/*Main content style*/
+.content-container {
+    background-color: var(--base-contrast-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.text {
+.content {
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Courier New', Courier, monospace;
-    color: var(--white);
+    color: var(--text-color);
 }
 
-h1 {
+.title {
     font-size: 70px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #0AE600;
+    color: var(--text-constrat-color);
 }
 
-.text1 {
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 30%;
-    margin-top: 20px;
+.contrast-link {
+    color: var(--text-constrat-color);
 }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    margin-top: 20px;
-}
+    .contrast-link:hover {
+        color: var(--text-color);
+        background-color: var(--text-constrat-color);
+        border-radius: 5px;
+        padding: 0 5px;
+    }
 
-.digitazon {
-    color: rgb(241, 181, 241);
-}
-/*inizia 'progetti piu importanti'*/
-.projects {
-    background-color: rgb(95, 46, 110);
-    height: 1600px;
-}
-
-.projects-item {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 10px;
-    margin-left: 20px;
-    color: white;
-    font-size: 35px;
-}
-
-.description {
-    text-align: end;
-    padding-top: 50px;
-}
-
-.project1 {
-    color: white;
-    margin-right: 20px;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.project2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    margin-right: 20px;
-}
-
-.project-description {
-    text-align: right;
-    background-color: rgb(58, 25, 92);
-    color: white;
-    width: fit-content;
-    inline-size: 900px;
-    float: right;
-    border-radius: 20px;
-    margin-right: 20px;
-    border: 5px solid rgb(58, 25, 92);
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    z-index: 1;
-}
-
-.tecno {
-    text-align: right;
-    margin-top: 90px;
-    margin-right: 20px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.img {
-    width: 600px;
-    position: absolute;
-    top: 750px;
-    margin-left: 20px;
-    border-radius: 6%;
-    box-shadow: 10px 10px rgb(95, 21, 93);
-    z-index: 0;
-}
-
-.bootcamp {
-    margin-top: 19%;
-    margin-left: 20px;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.feed {
-    font-size: 24px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(31, 9, 51);
-}
-
-.img1 {
-    position: absolute;
-    top: 1400px;
-    left: 30px;
-    border-radius: 6%;
-}
-
+/*Footer content style*/
 
 .footer {
-    background-color: var(--darkgrey);
+    background-color: var(--base-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
-.footer-margin {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.footer-layout {
+.footer-link-layout {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
     justify-items: center;
     align-items: center;
-}
-
-.footer-text {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding-bottom: 10px;
+    padding-left: 35%;
+    width: 30%;
 }
 
 .image-animation {
     cursor: pointer;
     transition-duration: 0.8s;
     transition-property: transform;
+    height: 50px;
+    width: 50px;
 }
 
     .image-animation:hover {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
     }
+
+
+
+/*Landscape phone to portrait tablet/
+Landscape phones and down*/
+@media (max-width: 767px) {
+    .top-menu-container {
+        font-size: 12px;
+    }
+
+    .nav-bar {
+        margin: 8px 5% 0 5%;
+    }
+}

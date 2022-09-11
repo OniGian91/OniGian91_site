@@ -58,8 +58,8 @@ a {
 /*Main content style*/
 .content-container {
     background-color: var(--base-contrast-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .content {
@@ -166,12 +166,16 @@ Landscape phones and down*/
     }
 
     .nav-bar {
-        margin: 8px 5% 0 5%;
+        margin: 8px 5% 0 -5%;
     }
 
     .resume-container {
         display: grid;
         grid-template-columns: 20% 80%;
+    }
+    p
+    {
+        font-size: 12px;
     }
 }
 

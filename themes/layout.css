@@ -125,24 +125,26 @@ a {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.resume-description-border
-{
+
+.resume-description-border {
     border-left: 2px solid green;
-    padding-left:10px;
+    padding-left: 10px;
 }
+
 .resume-image {
     cursor: pointer;
     transition-duration: 0.8s;
     transition-property: transform;
     height: 50px;
     width: 50px;
-    border-radius:5px;
+    border-radius: 5px;
 }
 
     .resume-image:hover {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
     }
+
 
 /*Landscape phone to portrait tablet/
 Landscape phones and down*/

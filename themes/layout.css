@@ -43,6 +43,9 @@ a {
 .list-item, .list-item-selected {
     margin: 10px;
     cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--text-constrat-color);
+    color: var(--text-constrat-color);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .list-item-selected {
@@ -56,6 +59,8 @@ a {
 .list-item:hover {
     color: var(--text-constrat-color);
     border-radius: 5px;
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
 }
 
 /*Main content style*/
@@ -81,13 +86,16 @@ a {
 .contrast-link {
     color: var(--text-constrat-color);
     cursor: pointer;
+    box-shadow: inset 0 0 0 0 var(--text-constrat-color);
+    color: var(--text-constrat-color);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
     .contrast-link:hover {
         color: var(--text-color);
-        background-color: var(--text-constrat-color);
-        border-radius: 5px;
         padding: 0 5px;
+        box-shadow: inset 100px 0 0 0 #54b3d6;
+        color: white;
     }
 
 /*Footer content style*/
@@ -100,24 +108,21 @@ a {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding-bottom: 10px;
-    border-top: 2px solid var(--border-contrast-color);
+    border-top: 3px solid var(--border-contrast-color);
 }
 
 .footer-link-layout {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-items: center;
-    align-items: center;
-    padding-left: 35%;
-    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
 }
 
 .image-animation {
     cursor: pointer;
     transition-duration: 0.8s;
     transition-property: transform;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
     .image-animation:hover {
@@ -134,10 +139,10 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.about-profile-pic-border
-{
+
+.about-profile-pic-border {
     border: 1px solid var(--border-contrast-color);
-    }
+}
 /* resume.html*/
 .resume-container {
     display: grid;
@@ -165,6 +170,11 @@ a {
     border-radius: 100%;
     border: 3px solid var(--base-contrast-color);
 }
+
+    .resume-profilepic:hover {
+        border: 3px solid var(--text-constrat-color);
+    }
+
 
 .resume-header {
     display: grid;

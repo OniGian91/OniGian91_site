@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../themes/layout.css">
+    <script src="../js/script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gianluca Bellini - Resume</title>
@@ -27,153 +28,168 @@
         <div class="content-container">
 
             <div class="content">
-                <div class="resume-header">
-                    <img class="resume-profilepic" src="../themes/images/profile-pic.jpg">
-                    <div>
-                        <h2>Gianluca Bellini</h2>
-                        <p>Line Manager @ iSolutions</p>
-                        <p>Salsomaggiore Terme, Emilia Romagna, Italy</p>
+                <div class="section-container">
+                    <div class="resume-header">
+                        <img class="resume-profilepic" src="../themes/images/profile-pic.jpg">
+                        <div>
+                            <h1>Gianluca Bellini</h1>
+                            <h2>Line Manager @ iSolutions</h2>
+                            <h4>Salsomaggiore Terme, Emilia Romagna, Italy</h4>
+                        </div>
                     </div>
                 </div>
+                <br />
                 <h1 class="title">Resume.</h1><br />
                 <!-- WORK-->
-                <h3 class="title">Work experiences</h3>
-                <div class="resume-container">
-                    <!-- iSolutions -->
-                    <div>
-                        <a><img class="resume-image" src="../themes/images/is.jpg"></a>
-                    </div>
-                    <div class="resume-description-border">
-                        <div>
-                            <h3>> iSolutions Software Engineering</h3>
-                            <h4>Full Time</h4>
-                            <h5>Noceto, Emilia Romagna, Italy</h5>
-                            <h5>Feb. 2015 - Present</h5><br />
-                            <p>
-                                I started working at iSolutions, in February 2015, shortly after graduating with a bachelor's degree in computer engineering.
-                                My first role was Support Developer, in which I gained experience in customer care, managing isolutions customers through the use of the Jira application.
-                                During this time I was able to hone my knowledge of SQL relational databases and the .NET framework.
-                            </p><br />
-                            <p>
-                                The customer support provided by the iSolutions Support team is high-profile support, as we interfaced with iSolutions' customer management or their developers directly.
-                                Thus, I was involved in data extractions using SQL, in environments characterized by a great deal of complexity in terms of data and database structure, troubleshooting and debugging of applications developed by iSolutions, and learning and deepening the proprietary iSBets platform.
-                                I also had the opportunity to coordinate customer activities through daily interfacing with the project manager, with whom we held SAL meetings with the customer, and supporting the development teams in their daily activities.
-                            </p><br />
-                            <p>
-                                After this period, abetted by the reorganization of the company through the use of scrum methodology, I had the opportunity to be directly involved in a development team for a few months, in which I developed some features built into the iSBets platform.
-                            </p><br />
-                            <p>
-                                To date my role is Line Manager and , in the company I am then responsible for coordinating, training and managing, some developers and members of the support and NOC team.
-                                I am also involved in recruiting, selecting people to be placed as support or junior developers.
-                                I am also currently filling the role of Incident Manager, for which I am in charge of managing and implementing the incident management flow.
-                            </p><br />
-                        </div>
-                        <div>
-                            <p>Tecnology used:</p><br />
-                            <img src="../themes/images/dotnet.png" width="80px" height="45px">
-                        </div>
-                    </div>
 
-                    <!-- ITIS Fidenza -->
-                    <div>
-                        <a><img class="resume-image" src="../themes/images/berenini.jpg"></a>
-                    </div>
-                    <div>
+                <div class="section-container">
+                    <h3 class="title">Work experiences</h3>
+                    <div class="resume-container">
+                        <!-- iSolutions -->
+                        <div>
+                            <a><img class="resume-image" src="../themes/images/is.jpg"></a>
+                        </div>
                         <div class="resume-description-border">
                             <div>
-                                <h3>> ITIS Berenini</h3>
-                                <h4>Part Time</h4>
-                                <h5>Fidenza, Emilia Romagna, Italy</h5>
-                                <h5>Set. 2011 - Jun. 2013</h5><br />
+                                <h3>> iSolutions Software Engineering</h3>
+                                <h4>Full Time</h4>
+                                <h5>Noceto, Emilia Romagna, Italy</h5>
+                                <h5>Feb. 2015 - Present</h5><br />
                                 <p>
-                                    During my graduate studies at the University of Parma, I provided support to children with disabilities at the technical institute ITIS Berenini in which I graduated.
-                                    This experience lasted about 2 years, on average 3 times a week, I participated in school classes, supporting the boys in learning and studying school subjects.
+                                    I started working at iSolutions, in February 2015, shortly after graduating with a bachelor's degree in computer engineering.
+                                    My first role was Support Developer, in which I gained experience in customer care, managing isolutions customers through the use of the Jira application.
+                                    During this time I was able to hone my knowledge of SQL relational databases and the .NET framework.
+                                    <span id="dots"></span><span id="more">
+                                        <br />
+                                        <br />
+                                        The customer support provided by the iSolutions Support team is high-profile support, as we interfaced with iSolutions' customer management or their developers directly.
+                                        Thus, I was involved in data extractions using SQL, in environments characterized by a great deal of complexity in terms of data and database structure, troubleshooting and debugging of applications developed by iSolutions, and learning and deepening the proprietary iSBets platform.
+                                        I also had the opportunity to coordinate customer activities through daily interfacing with the project manager, with whom we held SAL meetings with the customer, and supporting the development teams in their daily activities.
+                                        <br />
+                                        <br />
+                                        After this period, abetted by the reorganization of the company through the use of scrum methodology, I had the opportunity to be directly involved in a development team for a few months, in which I developed some features built into the iSBets platform.
+                                        <br />
+                                        <br />
+                                        To date my role is Line Manager and , in the company I am then responsible for coordinating, training and managing, some developers and members of the support and NOC team.
+                                        I am also involved in recruiting, selecting people to be placed as support or junior developers.
+                                        I am also currently filling the role of Incident Manager, for which I am in charge of managing and implementing the incident management flow.
+                                        <br />
+
+                                    </span>
                                 </p>
+                                <a class="contrast-link" onclick="myFunction()" id="myBtn">> More</a>
+                            </div>
+                            <div>
+                                <p>Tecnology used:</p><br />
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <!-- ITIS Fidenza -->
+                        <div>
+                            <a><img class="resume-image" src="../themes/images/berenini.jpg"></a>
+                        </div>
+                        <div>
+                            <div class="resume-description-border">
+                                <div>
+                                    <h3>> ITIS Berenini</h3>
+                                    <h4>Part Time</h4>
+                                    <h5>Fidenza, Emilia Romagna, Italy</h5>
+                                    <h5>Set. 2011 - Jun. 2013</h5><br />
+                                    <p>
+                                        During my graduate studies at the University of Parma, I provided support to children with disabilities at the technical institute ITIS Berenini in which I graduated.
+                                        This experience lasted about 2 years, on average 3 times a week, I participated in school classes, supporting the boys in learning and studying school subjects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BORMIOLI -->
+                        <div>
+                            <a><img class="resume-image" src="../themes/images/br.jpg"></a>
+                        </div>
+                        <div>
+                            <div class="resume-description-border">
+                                <div>
+                                    <h3>> Bormioli Rocco</h3>
+                                    <h4>Stage</h4>
+                                    <h5>Fidenza, Emilia Romagna, Italy</h5>
+                                    <h5>Jun. 2009 - Sept. 2009</h5><br />
+                                    <p>
+                                        During fifth grade I had the opportunity to do an internship at Bormioli Rocco in fidenza.
+                                        During the internship that lasted the entire summer of 2009, I had the opportunity to experience the knowledge I learned during my studies as an electronics technician.
+                                        The main tasks were related to the maintenance of the company's electrical systems, working closely with experienced electricians.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <br />
+                <!-- EDUCATION-->
+                <div class="section-container">
+                    <h3 class="title">Education</h3>
+                    <div class="resume-container">
+                        <!-- UNIPR -->
+                        <div>
+                            <a><img class="resume-image" src="../themes/images/unipr.jpg"></a>
+                        </div>
+                        <div>
+                            <div class="resume-description-border">
+                                <div>
+                                    <h3>> Università degli studi di Parma</h3>
+                                    <h4>Bachelor's degree in computer engineering</h4>
+                                    <h5>94/110</h5>
+                                    <h5>Parma, Emilia Romagna, Italy</h5>
+                                    <h5>2011 - 2014</h5><br />
+                                    <p>
 
-                    <!-- BORMIOLI -->
-                    <div>
-                        <a><img class="resume-image" src="../themes/images/br.jpg"></a>
-                    </div>
-                    <div>
-                        <div class="resume-description-border">
-                            <div>
-                                <h3>> Bormioli Rocco</h3>
-                                <h4>Stage</h4>
-                                <h5>Fidenza, Emilia Romagna, Italy</h5>
-                                <h5>Jun. 2009 - Sept. 2009</h5><br />
-                                <p>
-                                    During fifth grade I had the opportunity to do an internship at Bormioli Rocco in fidenza.
-                                    During the internship that lasted the entire summer of 2009, I had the opportunity to experience the knowledge I learned during my studies as an electronics technician.
-                                    The main tasks were related to the maintenance of the company's electrical systems, working closely with experienced electricians.
-                                </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITIS -->
+                        <div>
+                            <a><img class="resume-image" src="../themes/images/berenini.jpg"></a>
+                        </div>
+                        <div>
+                            <div class="resume-description-border">
+                                <div>
+                                    <h3>> ITIS Berenini Fidenza</h3>
+                                    <h4>Technical and Vocational Institute Diploma, Technology/Electrical, Electronics and Communications Engineering Technician</h4>
+                                    <h5>87/100</h5>
+                                    <h5>Fidenza, Emilia Romagna, Italy</h5>
+                                    <h5>2005 - 2010</h5><br />
+                                    <p>
+
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-       
-            <!-- EDUCATION-->
-            <h3 class="title">Education</h3>
-            <div class="resume-container">
-                <!-- UNIPR -->
-                <div>
-                    <a><img class="resume-image" src="../themes/images/unipr.jpg"></a>
-                </div>
-                <div>
-                    <div class="resume-description-border">
-                        <div>
-                            <h3>> Università degli studi di Parma</h3>
-                            <h4>Bachelor's degree in computer engineering</h4>
-                            <h5>94/110</h5>
-                            <h5>Parma, Emilia Romagna, Italy</h5>
-                            <h5>2011 - 2014</h5><br />
-                            <p>
-                              
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITIS -->
-                <div>
-                    <a><img class="resume-image" src="../themes/images/berenini.jpg"></a>
-                </div>
-                <div>
-                    <div class="resume-description-border">
-                        <div>
-                            <h3>> ITIS Berenini Fidenza</h3>
-                            <h4>Technical and Vocational Institute Diploma, Technology/Electrical, Electronics and Communications Engineering Technician</h4>
-                            <h5>87/100</h5>
-                            <h5>Fidenza, Emilia Romagna, Italy</h5>
-                            <h5>2005 - 2010</h5><br />
-                            <p>
-                               
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>Follow me on:</p>
-        <br />
-        <div class="footer-link-layout">
-            <div>
-                <a href="https://www.linkedin.com/in/gbellini91"><img class="image-animation" src="../themes/images/linkedIn.jpg"></a>
+        <div class="footer">
+            <br />
+            <p>Follow me on:</p>
+            <br />
+            <div class="footer-link-layout">
+                <div>
+                    <a href="https://www.linkedin.com/in/gbellini91"><img class="image-animation" src="../themes/images/linkedIn.jpg"></a>
+                </div>
+                <div>
+                    <a href="https://github.com/OniGian91"><img class="image-animation" src="../themes/images/github.png"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/onigian91"><img class="image-animation" src="../themes/images/instagram.png"></a>
+                </div>
             </div>
-            <div>
-                <a href="https://github.com/OniGian91"><img class="image-animation" src="../themes/images/github.png"></a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/onigian91"><img class="image-animation" src="../themes/images/instagram.png"></a>
-            </div>
+            <br />
+            <p>Developed with HTML, CSS an JS.</p>
         </div>
-    </div>
     </div>
 </body>
 </html>

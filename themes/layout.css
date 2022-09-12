@@ -1,8 +1,9 @@
 :root {
-    --base-color: #111111;
-    --base-contrast-color: #000000;
+    --base-color: #262626;
+    --base-contrast-color: #131313;
     --text-color: #ffffff;
-    --text-constrat-color: #0AE600;
+    --text-constrat-color: #08fdd8;
+    --border-contrast-color: #08fdd8;
 }
 /*Base style*/
 * {
@@ -16,8 +17,9 @@ a {
 }
 
 .page-layout {
-    display: grid;
-    grid-template-rows: 50px auto auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /*Top-Menu style*/
@@ -25,6 +27,7 @@ a {
     background-color: var(--base-color);
     color: var(--text-color);
     font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid var(--border-contrast-color);
 }
 
 .nav-bar {
@@ -60,6 +63,7 @@ a {
     background-color: var(--base-contrast-color);
     padding-top: 50px;
     padding-bottom: 50px;
+    flex: 1;
 }
 
 .content {
@@ -76,6 +80,7 @@ a {
 
 .contrast-link {
     color: var(--text-constrat-color);
+    cursor: pointer;
 }
 
     .contrast-link:hover {
@@ -89,10 +94,13 @@ a {
 
 .footer {
     background-color: var(--base-color);
+    /*    background-image: url(../themes/images/berenini.jpg);
+    background-repeat: repeat;*/
     color: var(--text-color);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding-bottom:10px;
+    padding-bottom: 10px;
+    border-top: 2px solid var(--border-contrast-color);
 }
 
 .footer-link-layout {
@@ -117,6 +125,19 @@ a {
         -webkit-transform: rotate(360deg);
     }
 
+/*index.hml*/
+.home-content {
+    text-align: center;
+}
+/**/
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-profile-pic-border
+{
+    border: 1px solid var(--border-contrast-color);
+    }
 /* resume.html*/
 .resume-container {
     display: grid;
@@ -126,8 +147,15 @@ a {
     padding-bottom: 20px;
 }
 
+.section-container {
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--base-color);
+}
+
 .resume-description-border {
-    border-left: 3px solid green;
+    border-left: 3px solid var(--text-constrat-color);
     padding-left: 20px;
 }
 
@@ -135,6 +163,7 @@ a {
     height: 150px;
     width: 150px;
     border-radius: 100%;
+    border: 3px solid var(--base-contrast-color);
 }
 
 .resume-header {
@@ -144,19 +173,20 @@ a {
 }
 
 .resume-image {
+    display: block;
     cursor: pointer;
     transition-duration: 0.8s;
     transition-property: transform;
     height: 50px;
     width: 50px;
     border-radius: 5px;
+    margin: auto;
 }
 
     .resume-image:hover {
         transform: rotate(360deg);
         -webkit-transform: rotate(360deg);
     }
-
 
 /*Landscape phone to portrait tablet/
 Landscape phones and down*/
@@ -173,8 +203,8 @@ Landscape phones and down*/
         display: grid;
         grid-template-columns: 20% 80%;
     }
-    p
-    {
+
+    p {
         font-size: 12px;
     }
 }
@@ -184,5 +214,13 @@ Landscape phones and down*/
     .resume-header {
         grid-template-columns: auto;
     }
+
+    .content {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
 
+#more {
+    display: none;
+}

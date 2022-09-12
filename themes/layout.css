@@ -2,13 +2,27 @@
     --base-color: #262626;
     --base-contrast-color: #131313;
     --text-color: #ffffff;
-    --text-constrat-color: #08fdd8;
+    --text-contrast-color: #08fdd8;
     --border-contrast-color: #08fdd8;
 }
 /*Base style*/
 * {
     position: relative;
     margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 a {
@@ -22,6 +36,9 @@ a {
     height: 100vh;
 }
 
+.title {
+    color: var(--text-contrast-color);
+}
 /*Top-Menu style*/
 .top-menu-container {
     background-color: var(--base-color);
@@ -43,29 +60,31 @@ a {
 .list-item, .list-item-selected {
     margin: 10px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 var(--text-constrat-color);
-    color: var(--text-constrat-color);
+    box-shadow: inset 0 0 0 0 var(--text-contrast-color);
+    color: var(--text-contrast-color);
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .list-item-selected {
-    background-color: var(--text-constrat-color);
-    color: var(--base-contrast-color);
+    background-color: var(--text-contrast-color);
+    color: var(--base-color);
     border-radius: 3px;
     font-weight: bold;
     padding: 0 5px;
 }
 
 .list-item:hover {
-    color: var(--text-constrat-color);
-    border-radius: 5px;
+    color: var(--text-contrast-color);
+    border-radius: 3px;
     box-shadow: inset 100px 0 0 0 #54b3d6;
     color: white;
 }
 
 /*Main content style*/
 .content-container {
-    background-color: var(--base-contrast-color);
+    background: linear-gradient(-45deg, #686868, #444444, #1E1E1E, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     padding-top: 50px;
     padding-bottom: 50px;
     flex: 1;
@@ -78,25 +97,23 @@ a {
     color: var(--text-color);
 }
 
-.title {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--text-constrat-color);
-}
+
 
 .contrast-link {
-    color: var(--text-constrat-color);
+    color: var(--text-contrast-color);
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 var(--text-constrat-color);
-    color: var(--text-constrat-color);
+    box-shadow: inset 0 0 0 0 var(--text-contrast-color);
+    color: var(--text-contrast-color);
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
     .contrast-link:hover {
         color: var(--text-color);
-        padding: 0 5px;
         box-shadow: inset 100px 0 0 0 #54b3d6;
         color: white;
     }
+
+
 
 /*Footer content style*/
 
@@ -134,14 +151,35 @@ a {
 .home-content {
     text-align: center;
 }
-/**/
+/*about.html*/
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+ display: inline-flex;
+  flex-wrap: wrap;
+    
+}
+
+.tags-container {
+    display: block;
+}
+
+.tags {
+    background-color: var(--text-contrast-color);
+    color: var(--base-color);
+    font-weight: bold;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 2px;
+}
+
+.about-profile-pic {
+
+    flex: 1;
+    
 }
 
 .about-profile-pic-border {
-    border: 1px solid var(--border-contrast-color);
+    border: 3px solid var(--border-contrast-color);
 }
 /* resume.html*/
 .resume-container {
@@ -159,8 +197,9 @@ a {
     background-color: var(--base-color);
 }
 
+
 .resume-description-border {
-    border-left: 3px solid var(--text-constrat-color);
+    border-left: 3px solid var(--text-contrast-color);
     padding-left: 20px;
 }
 
@@ -172,7 +211,7 @@ a {
 }
 
     .resume-profilepic:hover {
-        border: 3px solid var(--text-constrat-color);
+        border: 3px solid var(--text-contrast-color);
     }
 
 
@@ -228,6 +267,10 @@ Landscape phones and down*/
     .content {
         margin-left: 1%;
         margin-right: 1%;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
     }
 }
 

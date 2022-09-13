@@ -39,6 +39,19 @@ a {
 .title {
     color: var(--text-contrast-color);
 }
+
+.button {
+    padding: 20px;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--text-contrast-color);
+    color: var(--base-color);
+}
+
+    .button:hover {
+        background-color: var(--text-color);
+    }
 /*Top-Menu style*/
 .top-menu-container {
     background-color: var(--base-color);
@@ -81,10 +94,17 @@ a {
 }
 
 /*Main content style*/
-.content-container {
+.content-container.animated {
     background: linear-gradient(-45deg, #686868, #444444, #1E1E1E, #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex: 1;
+}
+
+.content-container {
+    background: var(--base-contrast-color);
     padding-top: 50px;
     padding-bottom: 50px;
     flex: 1;
@@ -169,12 +189,28 @@ a {
 }
 
 .about-profile-pic {
-
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     border-radius: 40px;
-       justify-content: center;
-    
+    justify-content: center;
+}
+
+.tags-container {
+    line-height: 50px;
+}
+/*contact.html*/
+.contact-section-container {
+    margin: 0;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: var(--base-color);
+    justify-content: center;
+}
+
+/*projects.html*/
+.projects-pic {
+    width: 50%;
+    height: auto;
 }
 
 
@@ -207,9 +243,7 @@ a {
     border: 3px solid var(--base-contrast-color);
 }
 
-    .resume-profilepic:hover {
-        border: 3px solid var(--text-contrast-color);
-    }
+
 
 
 .resume-header {
@@ -253,8 +287,10 @@ Landscape phones and down*/
     p {
         font-size: 12px;
     }
-      .about-content {
-            grid-template-columns: auto ;
+
+    .about-content {
+        grid-template-columns: auto;
+        text-align: center;
     }
 }
 
@@ -268,12 +304,10 @@ Landscape phones and down*/
         margin-left: 1%;
         margin-right: 1%;
     }
-    .about-content {
-     
-        text-align: center;
-    }
 
-  
+    .projects-pic {
+        width: 100%;
+    }
 }
 
 #more {

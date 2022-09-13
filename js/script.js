@@ -13,3 +13,4 @@
         moreText.style.display = "inline";
     }
 }
+

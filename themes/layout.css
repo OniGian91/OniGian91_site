@@ -11,6 +11,7 @@
     margin: 0;
 }
 
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -40,13 +41,21 @@ a {
     color: var(--text-contrast-color);
 }
 
+.title-big {
+    color: var(--text-contrast-color);
+    font-size: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .button {
     padding: 20px;
     border: 0px;
     border-radius: 5px;
     text-align: center;
+    font-weight: bold;
+      justify-content: center;
     background-color: var(--text-contrast-color);
     color: var(--base-color);
+    margin: 10px;
 }
 
     .button:hover {
@@ -94,13 +103,13 @@ a {
 }
 
 /*Main content style*/
-.content-container.animated {
+.content-container-animated {
     background: linear-gradient(-45deg, #686868, #444444, #1E1E1E, #000000);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    padding-top: 50px;
-    padding-bottom: 50px;
     flex: 1;
+    margin-top: -50px;
+    border-bottom: 3px solid var(--text-contrast-color)
 }
 
 .content-container {
@@ -150,7 +159,6 @@ a {
 
 .footer-link-layout {
     display: flex;
-    justify-content: space-between;
     justify-content: center;
 }
 
@@ -170,6 +178,8 @@ a {
 /*index.hml*/
 .home-content {
     text-align: center;
+    padding-bottom:50px;
+    padding-top: 50px;
 }
 /*about.html*/
 .about-content {
@@ -177,6 +187,11 @@ a {
     grid-template-columns: auto auto;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
+
+        margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-color);
 }
 
 .tags {
@@ -187,6 +202,9 @@ a {
     margin: 3px;
     border-radius: 2px;
 }
+.tags-container {
+    line-height: 50px;
+}
 
 .about-profile-pic {
     width: 70%;
@@ -194,10 +212,29 @@ a {
     border-radius: 40px;
     justify-content: center;
 }
-
-.tags-container {
-    line-height: 50px;
+/*
+.about-content-spare
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 20px;
+    padding-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.spare-container
+{
+    display: grid;
+    grid-template-rows: 20%  80%;
+    background-color: red;
+}
+.spare-image
+{
+  width: auto;
+  height: 50%;
+}*/
+
 /*contact.html*/
 .contact-section-container {
     margin: 0;
@@ -206,7 +243,11 @@ a {
     background-color: var(--base-color);
     justify-content: center;
 }
-
+.contacts
+{
+        display: flex;
+    justify-content: center;
+}
 /*projects.html*/
 .projects-pic {
     width: 50%;
@@ -285,11 +326,14 @@ Landscape phones and down*/
     }
 
     p {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .about-content {
         grid-template-columns: auto;
+        text-align: center;
+    }
+     .page-title {
         text-align: center;
     }
 }

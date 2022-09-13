@@ -28,79 +28,82 @@
 
         <div class="content-container">
             <div class="content">
-                <h1>Projects.</h1>
+                <h1 class="page-title">Projects.</h1>
                 <br />
-                <p>
-                    <h2>ANDROID APPLICATION FOR DIAGNOSTIC AGRICULTURAL AND FOOD ANALYSIS BASED ON IMAGE PROCESSING</h2>
-                    I've developed this Android app as a thesis, and aims to analyze absorption of light by various substances, in order thus to identify absorbance.                 
-                    <span id="dots"></span><span id="more">
-                        <br /><br />
-                        A number of libraries were used in the development of this application, such as OpenCV and GraphView, which being OpenSource and providing
-                        simple but accurate methods and was the ideal libraries for the development of the image processing algorithm and to graph the results.
-                        <br />
-                        Another aspect that was evaluated was the amount of computation that the device would have to deal with, having to work with images
-                        it is not a given that the performance could be up to the required role, for this reason the development relied on the NDK package
-                        giving the possibility to use C portions of the OpenCV library code for image processing.
-                        <br /><br />
-                        # Main feature <br />
-                        - Acquistion interface <br />
-                        - Photo gallery management <br />
-                        - Data analysis <br />
-                        - Presentation <br />
-                        <br /><br />
-                        <img class="projects-pic" src="../themes/images/project-android1.JPG">
-                        <br /><br />
-                        <h2>ARCHITECTURE</h2>
-                        <br />
-                        At the architectural level, the application consists of three main blocks, a block acquisition block, a processing block and a presentation block.
-                        <br />
-                        <img class="projects-pic" src="../themes/images/project-android2.JPG">
-                        <br /><br />
-                        <h3>ACQUISITION</h3>
-                        <br />
-                        This block is the one in charge of acquiring the images to be processed and  manage the images saved in the internal memory by delegating the analysis of them to the processing block.
-                        <br />
-                        <img class="projects-pic" src="../themes/images/project-android3.JPG">
-                        <br />
-                        As per the image in fact, it is possible to acquire the photo
-                        through the device's camera or send the image to the processing block by fetching it directly within the le system.
-                        It is therefore possible to use the app to analyze images even not directly captured by the camera of the device on which it is installed.
-                        <br /><br />
-                        <h3>PROCESSING</h3>
-                        <br />
-                        The most substantial block in the entire architecture is the processing block. It is the part that handles all the functions implemented for image analysis and
-                        performs the most complex calculations.
-                        The image processing operations implemented are multiple, such as:
-                        <br />
-                        - Image channel decomposition<br />
-                        - Crop (image cropping)<br />
-                        - Pixel analysis<br />
-                        - Filters (binarization, saturation, etc...)<br />
-                        The most important function is the one that performs RGB averaging within the acquired image, and then performs calculations on absorbance and light intensity.
-                        The approach chosen was to perform this operation directly on the device, in order to have an immediate result under any condition and at any at any time.
-                        <br />
-                        <img class="projects-pic" src="../themes/images/project-android4.JPG">
-                        <br />
-                        <br /><br />
-                        <h3>PRESENTATION</h3>
-                        <br />
-                        The last block has the task of showing the user the results obtained after the processing phase, this is a definitely important block that requires simplicity and cleanliness of the interface.
-                        A simple interface was designed trying to think in the perspective of the nal user so that he could have access to all the results on a single page.
-                        <br />
-                        <img class="projects-pic" src="../themes/images/project-android5.JPG">
-                        <br />
-                    </span>
-                </p>
-                <a class="contrast-link" onclick="myFunction()" id="myBtn">> More</a>
-                <h2>Tech</h2>
-                <p class="tags-container">
-                    <span class="tags">Android SDK</span> <span class="tags">Android SDK</span> <span class="tags">C</span> <span class="tags">OpenCV</span>  <span class="tags">GraphView</span>
-                </p>
-
+                <div class="section-container">
+                    <p>
+                        <h2>Android application for dianostic agricultural and food analysis based on image processing</h2>
+                        I've developed this Android app as a thesis, and aims to analyze absorption of light by various substances, in order thus to identify absorbance.
+                        <span id="dots"></span><span id="more">
+                            <br /><br />
+                            A number of libraries were used in the development of this application, such as OpenCV and GraphView, which being OpenSource and providing
+                            simple but accurate methods and was the ideal libraries for the development of the image processing algorithm and to graph the results.
+                            <br />
+                            Another aspect that was evaluated was the amount of computation that the device would have to deal with, having to work with images
+                            it is not a given that the performance could be up to the required role, for this reason the development relied on the NDK package
+                            giving the possibility to use C portions of the OpenCV library code for image processing.
+                            <br /><br />
+                            # Main feature <br />
+                            - Acquistion interface <br />
+                            - Photo gallery management <br />
+                            - Data analysis <br />
+                            - Presentation <br />
+                            <br /><br />
+                            <img class="projects-pic" src="../themes/images/project-android1.JPG">
+                            <br /><br />
+                            <h2>ARCHITECTURE</h2>
+                            <br />
+                            At the architectural level, the application consists of three main blocks, a block acquisition block, a processing block and a presentation block.
+                            <br />
+                            <img class="projects-pic" src="../themes/images/project-android2.JPG">
+                            <br /><br />
+                            <h3>ACQUISITION</h3>
+                            <br />
+                            This block is the one in charge of acquiring the images to be processed and  manage the images saved in the internal memory by delegating the analysis of them to the processing block.
+                            <br />
+                            <img class="projects-pic" src="../themes/images/project-android3.JPG">
+                            <br />
+                            As per the image in fact, it is possible to acquire the photo
+                            through the device's camera or send the image to the processing block by fetching it directly within the le system.
+                            It is therefore possible to use the app to analyze images even not directly captured by the camera of the device on which it is installed.
+                            <br /><br />
+                            <h3>PROCESSING</h3>
+                            <br />
+                            The most substantial block in the entire architecture is the processing block. It is the part that handles all the functions implemented for image analysis and
+                            performs the most complex calculations.
+                            The image processing operations implemented are multiple, such as:
+                            <br />
+                            - Image channel decomposition<br />
+                            - Crop (image cropping)<br />
+                            - Pixel analysis<br />
+                            - Filters (binarization, saturation, etc...)<br />
+                            The most important function is the one that performs RGB averaging within the acquired image, and then performs calculations on absorbance and light intensity.
+                            The approach chosen was to perform this operation directly on the device, in order to have an immediate result under any condition and at any at any time.
+                            <br />
+                            <img class="projects-pic" src="../themes/images/project-android4.JPG">
+                            <br />
+                            <br /><br />
+                            <h3>PRESENTATION</h3>
+                            <br />
+                            The last block has the task of showing the user the results obtained after the processing phase, this is a definitely important block that requires simplicity and cleanliness of the interface.
+                            A simple interface was designed trying to think in the perspective of the nal user so that he could have access to all the results on a single page.
+                            <br />
+                            <img class="projects-pic" src="../themes/images/project-android5.JPG">
+                            <br />
+                        </span>
+                    </p>
+                    <br />
+                    <a class="contrast-link" onclick="myFunction()" id="myBtn">> More</a>
+                    <h3>Tech</h3>
+                    <p class="tags-container">
+                        <span class="tags">Android SDK</span> <span class="tags">Android SDK</span> <span class="tags">C</span> <span class="tags">OpenCV</span>  <span class="tags">GraphView</span>
+                    </p>
+                </div>
             </div>
         </div>
 
         <div class="footer">
+            <br />
             <p>Follow me on:</p>
             <br />
             <div class="footer-link-layout">
@@ -114,6 +117,8 @@
                     <a href="https://www.instagram.com/onigian91"><img class="image-animation" src="../themes/images/instagram.png"></a>
                 </div>
             </div>
+            <br />
+            <p>Developed with HTML, CSS an JS.</p>
         </div>
     </div>
 </body>

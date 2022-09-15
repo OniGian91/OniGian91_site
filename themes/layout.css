@@ -1,9 +1,10 @@
 :root {
-    --base-color: #262626;
-    --base-contrast-color: #131313;
-    --text-color: #ffffff;
-    --text-contrast-color: #08fdd8;
-    --border-contrast-color: #08fdd8;
+    --base-color: #262626; /* Grey */
+    --base-contrast-color: #131313; /* Dark Grey */
+    --text-color: #ffffff; /* White */
+    --text-contrast-color: #08fdd8; /* Blue */
+    --border-contrast-color: #08fdd8; /* Blue */
+    /*--secondary-color: */
 }
 /*Base style*/
 * {
@@ -44,16 +45,9 @@ a {
 .title-big {
     color: var(--text-contrast-color);
     font-size: 80px;
-    font-family:'Lucida Grande',verdana,arial,helvetica,sans-serif;
+    font-family: 'Lucida Grande',verdana,arial,helvetica,sans-serif;
 }
-.separator
-{
-    width:100px;
-    height: 5px;
-    color: red;
-    background-color: red;
-    display: block;
-}
+
 
 .button {
     padding: 10px 20px 10px 20px;
@@ -64,10 +58,12 @@ a {
     background-color: var(--text-contrast-color);
     color: var(--base-color);
     margin: 10px;
+       transition: 0.3s;
 }
 
     .button:hover {
         background-color: var(--text-color);
+         box-shadow: 5px  5px 5px var(--text-contrast-color);
     }
 /*Top-Menu style*/
 .top-menu-container {
@@ -148,6 +144,7 @@ a {
         color: var(--text-color);
         box-shadow: inset 100px 0 0 0 #54b3d6;
         color: white;
+        cursor: pointer;
     }
 
 
@@ -159,7 +156,7 @@ a {
     /*    background-image: url(../themes/images/berenini.jpg);
     background-repeat: repeat;*/
     color: var(--text-color);
-    font-family:'Lucida Grande',verdana,arial,helvetica,sans-serif;
+    font-family: 'Lucida Grande',verdana,arial,helvetica,sans-serif;
     text-align: center;
     padding-bottom: 10px;
     border-top: 3px solid var(--border-contrast-color);
@@ -201,18 +198,25 @@ a {
     grid-row-gap: 50px;
     margin-left: 10%;
     margin-right: 10%;
-    font-family:'Lucida Grande',verdana,arial,helvetica,sans-serif;
+    font-family: 'Lucida Grande',verdana,arial,helvetica,sans-serif;
     color: var(--text-color);
 }
 
 .tags {
     background-color: var(--text-contrast-color);
-    color: var(--base-color);
+    color: var(--base-contrast-color);
     font-weight: bold;
     padding: 3px;
     margin: 3px;
     border-radius: 2px;
+    transition: 0.3s;
+    font-family: monospace;
+    font-size: 14px;
 }
+
+    .tags:hover {
+        box-shadow: 4px 4px 5px 0 var(--text-color);
+    }
 
 .tags-container {
     line-height: 50px;
@@ -220,36 +224,55 @@ a {
 
 .about-profile-pic {
     width: 60%;
-    box-shadow: 5px 5px var(--base-color);
-
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px var(--base-color);
 }
-.profile-pic-borders
-{
 
-    border: 1px solid red;
-}
-/*
-.about-content-spare
-{
+    .about-profile-pic:hover {
+        box-shadow: 5px 5px 5px var(--text-color);
+    }
+
+.about-content-passions {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 20px;
-    padding-top: 50px;
+    grid-template-columns: auto auto auto;
     margin-left: 10%;
     margin-right: 10%;
+    grid-row-gap: 20px;
+    padding-top: 50px;
 }
 
-.spare-container
-{
+
+.card {
     display: grid;
-    grid-template-rows: 20%  80%;
-    background-color: red;
+    grid-template-rows: auto auto;
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Lucida Grande',verdana,arial,helvetica,sans-serif;
 }
-.spare-image
-{
-  width: auto;
-  height: 50%;
-}*/
+
+.card-text {
+    padding: 10px 0 10px 0;
+}
+
+.card-image {
+    width: 298px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.card-container {
+    transition: 0.3s;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: var(--base-color);
+    margin: 0 50px 0 50px;
+    width: 300px;
+}
+
+    .card-container:hover {
+        box-shadow: 5px 5px 5px 0 var(--text-contrast-color);
+    }
 
 /*contact.html*/
 .contact-section-container {
@@ -285,6 +308,7 @@ a {
     padding: 10px;
     border-radius: 10px;
     background-color: var(--base-color);
+    border: 1px solid black;
 }
 
 
@@ -353,6 +377,10 @@ Landscape phones and down*/
     .page-title {
         text-align: center;
     }
+
+    .about-content-passions {
+        grid-template-columns: auto;
+    }
 }
 
 @media (max-width: 980px) {
@@ -369,10 +397,10 @@ Landscape phones and down*/
     .projects-pic {
         width: 100%;
     }
-    
-.title-big {
-    font-size: 70px;
-}
+
+    .title-big {
+        font-size: 70px;
+    }
 }
 
 #more {

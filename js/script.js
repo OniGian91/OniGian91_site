@@ -1,4 +1,4 @@
-﻿function myFunction() {
+﻿function readMore() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
@@ -13,4 +13,5 @@
         moreText.style.display = "inline";
     }
 }
+
 

@@ -43,16 +43,24 @@ a {
 
 .title-big {
     color: var(--text-contrast-color);
-    font-size: 100px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    font-family:'Lucida Grande',verdana,arial,helvetica,sans-serif;
 }
+.separator
+{
+    width:100px;
+    height: 5px;
+    color: red;
+    background-color: red;
+    display: block;
+}
+
 .button {
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
     border: 0px;
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
-      justify-content: center;
     background-color: var(--text-contrast-color);
     color: var(--base-color);
     margin: 10px;
@@ -65,7 +73,7 @@ a {
 .top-menu-container {
     background-color: var(--base-color);
     color: var(--text-color);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Grande',verdana,arial,helvetica,sans-serif;
     border-bottom: 2px solid var(--border-contrast-color);
 }
 
@@ -122,7 +130,7 @@ a {
 .content {
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lucida Grande',verdana,arial,helvetica,sans-serif;
     color: var(--text-color);
 }
 
@@ -151,7 +159,7 @@ a {
     /*    background-image: url(../themes/images/berenini.jpg);
     background-repeat: repeat;*/
     color: var(--text-color);
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Grande',verdana,arial,helvetica,sans-serif;
     text-align: center;
     padding-bottom: 10px;
     border-top: 3px solid var(--border-contrast-color);
@@ -160,6 +168,10 @@ a {
 .footer-link-layout {
     display: flex;
     justify-content: center;
+}
+
+.footer-element {
+    padding: 0 8px 0 8px;
 }
 
 .image-animation {
@@ -178,7 +190,7 @@ a {
 /*index.hml*/
 .home-content {
     text-align: center;
-    padding-bottom:50px;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
 /*about.html*/
@@ -187,10 +199,9 @@ a {
     grid-template-columns: auto auto;
     grid-column-gap: 50px;
     grid-row-gap: 50px;
-
-        margin-left: 10%;
+    margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Grande',verdana,arial,helvetica,sans-serif;
     color: var(--text-color);
 }
 
@@ -202,15 +213,20 @@ a {
     margin: 3px;
     border-radius: 2px;
 }
+
 .tags-container {
     line-height: 50px;
 }
 
 .about-profile-pic {
-    width: 70%;
-    height: 70%;
-    border-radius: 40px;
-    justify-content: center;
+    width: 60%;
+    box-shadow: 5px 5px var(--base-color);
+
+}
+.profile-pic-borders
+{
+
+    border: 1px solid red;
 }
 /*
 .about-content-spare
@@ -243,9 +259,9 @@ a {
     background-color: var(--base-color);
     justify-content: center;
 }
-.contacts
-{
-        display: flex;
+
+.contacts {
+    display: flex;
     justify-content: center;
 }
 /*projects.html*/
@@ -333,7 +349,8 @@ Landscape phones and down*/
         grid-template-columns: auto;
         text-align: center;
     }
-     .page-title {
+
+    .page-title {
         text-align: center;
     }
 }
@@ -352,6 +369,10 @@ Landscape phones and down*/
     .projects-pic {
         width: 100%;
     }
+    
+.title-big {
+    font-size: 70px;
+}
 }
 
 #more {

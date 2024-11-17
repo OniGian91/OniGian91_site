@@ -1,7 +1,7 @@
-﻿function readMore() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+﻿function readMore(section) {
+    var dots = document.getElementById("dots" + section);
+    var moreText = document.getElementById("more" + section);
+    var btnText = document.getElementById("myBtn" + section);
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
@@ -13,5 +13,3 @@
         moreText.style.display = "inline";
     }
 }
-
-

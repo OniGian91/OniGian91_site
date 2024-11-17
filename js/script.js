@@ -13,3 +13,18 @@
         moreText.style.display = "inline";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const hiddenDivs = document.querySelectorAll('.hidden-div');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    hiddenDivs.forEach(div => observer.observe(div));
+});
+

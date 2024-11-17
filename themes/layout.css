@@ -321,6 +321,18 @@ Landscape phones and down*/
     }
 }
 
+.hidden-div {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+
+.hidden-div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 @media (max-width: 980px) {
 
     .resume-header {

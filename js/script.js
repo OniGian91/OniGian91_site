@@ -28,3 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
     hiddenDivs.forEach(div => observer.observe(div));
 });
 
+
+
+window.addEventListener('keydown', function(e) {
+  const keysToDisable = [32, 33, 34, 35, 36, 37, 38, 39, 40]; 
+
+  if (keysToDisable.includes(e.keyCode)) {
+    e.preventDefault();
+  }
+});

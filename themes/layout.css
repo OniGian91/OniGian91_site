@@ -108,11 +108,8 @@ a {
 
 /*Main content style*/
 .content-container-animated {
-    background-image: url('images/background/surfer.jfif'); /* Replace with the actual path to your image */
+    background-image: url('images/background/back.png'); /* Replace with the actual path to your image */
     background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    flex: 1;
     margin-top: -50px;
     border-bottom: 3px solid var(--text-contrast-color);
 }

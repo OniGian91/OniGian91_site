@@ -76,7 +76,199 @@
                 </div>
 
             </div>
-            <br /><br /><br /><br />
+            <br /><br />
+
+            <!-- PROJECTS -->
+            <div class="content-container hidden-div">
+               <div class="content">
+                    <h1 class="page-title">Projects.</h1>
+               </div>
+             <!-- CardMarket grabber -->
+                <div class="content">
+                    <br />
+                    <div class="section-container">
+                        <p>
+                            <h2>Card Market Grabber</h2>
+                            I developed a data grabber/scraper designed to collect and store information about card listings from a popular trading card marketplace called <a href="https://www.cardmarket.com/">Card Market</a>.
+                            <span id="dots4">...</span><span id="more4" style="display:none;">
+                               <br /><br />
+                                    The system is based on a .NET console application that can be configured with different scraping strategies, from gathering data about specific cards to generating statistics on sellers and their inventories.
+                                    <br /><br />
+                                    <img class="projects-pic" src="./themes/images/project-grabber2.jpg">
+                                    <img class="projects-pic" src="./themes/images/project-grabber6.jpg">
+                                    <br /><br />
+                                    All the data collected is stored in a database that tracks changes over time. This allows me to identify sellers offering cards that meet specific price and quality criteria.
+                                    <br /><br />
+                                      <img class="projects-pic" src="./themes/images/project-grabber4.jpg">
+                                      <br /><br />
+                                    Once such listings are detected, the system sends me notifications via Telegram, enabling me to purchase cards in bulk at optimized prices.
+                                    <br /><br />
+                                      <img class="projects-pic" src="./themes/images/project-grabber3.jpg">
+                                      <br /><br />
+                                    To monitor the scraper’s activity and the imported data, I also implemented Grafana dashboards connected to the database. 
+                                    These visualize key metrics and trends, making it easier to track scraping progress and marketplace dynamics.
+                                    <br /><br />
+                                     <img class="projects-pic" src="./themes/images/project-grabber1.gif">  <img class="projects-pic" src="./themes/images/project-grabber5.gif">
+                                    <br /><br />
+                                    From a technical standpoint, I used <a href="https://playwright.dev/">Playwright</a>, a browser automation library, to control browser instances and navigate the site programmatically.
+                                    <br />
+                                    Since CardMarket does not provide a public API, Playwright allowed me to configure page navigation and interaction logic, for example, clicking to expand listings, reading specific page elements, and extracting relevant information.
+                                    <br />
+                                    <img class="projects-pic" src="./themes/images/project-grabber7.jpg">  
+                                    <br /><br />
+                                Repo: <a href="https://github.com/OniGian91/CardMarketGrabber">CardMarketGrabber</a>
+                                <br />
+                                <br />
+                                <br />
+
+                            </span>
+                        </p>
+                        <a class="contrast-link" onclick="readMore(4)" id="myBtn4">> More</a>
+                        <br />
+                        <br />
+                        <h3>Tech</h3>
+                        <p class="tags-container">
+                            <span class="tags">C#</span> <span class="tags">TSQL</span>  <span class="tags">Powershell</span> <span class="tags">Grafana</span> <span class="tags">Playwright</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Fun PkmnGame -->
+                <div class="content">
+                    <br />
+                    <div class="section-container">
+                        <p>
+                            <h2>Javascript Pokémon battle game</h2>
+                            For fun, I created a Pokémon battle game using JavaScript!
+                            <span id="dots3">...</span><span id="more3" style="display:none;">
+                                I used JavaScript for all the character movement, hit detection, health bars, and animations, and made it all run smoothly in the browser.
+                                It was a blast combining the Pokémon world with classic arcade-style fighting mechanics!
+                            <br /><br />
+                                Repo: <a href="https://github.com/OniGian91/pkmnFighters">pkmnFighters</a>
+                                <iframe src="https://onigian91.github.io/pkmnFighters/"  style ="width: 100%;height: 90vh; border: none;"></iframe>
+   
+              
+                                <br />
+                                <br />
+                                <br />
+
+                            </span>
+                        </p>
+                        <a class="contrast-link" onclick="readMore(3)" id="myBtn3">> More</a>
+                        <br />
+                        <br />
+                        <h3>Tech</h3>
+                        <p class="tags-container">
+                            <span class="tags">Javascript</span> <span class="tags">HTML</span>  <span class="tags">css</span>
+                        </p>
+                    </div>
+                </div>
+  
+                <!-- NOC team -->
+                <div class="content">
+                    <br />
+                    <div class="section-container">
+                        <p>
+                            <h2>NOC team in iSolutions</h2>
+                            iSolutions has always paid special attention to monitoring its applications and its customers’ architectures.
+                            <span id="dots2">...</span><span id="more2" style="display:none;">
+                                For this reason, the company decided to invest in the development of a proprietary application, iSAlert, and the introduction of the NOC team, which we will discuss below, in order to monitor and provide an extremely proactive service to its customers.
+
+                                <br /><br />
+                                Read my full article at: <a href="https://labs.isolutions.it/2022/09/30/isalert-and-noc-team/">labs.isolutions.it</a>
+                                <br />
+                                <br />
+                                <br />
+
+                            </span>
+                        </p>
+                        <a class="contrast-link" onclick="readMore(2)" id="myBtn2">> More</a>
+                        <br />
+                        <br />
+                        <h3>Tech</h3>
+                        <p class="tags-container">
+                            <span class="tags">.NET</span> <span class="tags">SQL</span>  <span class="tags">C#</span>
+                            <span class="tags">VB</span> <span class="tags">HTML</span>  <span class="tags">CSS</span> <span class="tags">Git</span> <span class="tags">Grafana</span>
+                            <span class="tags">Project management</span>
+                        </p>
+                    </div>
+                </div>
+
+
+              <!-- Android application -->
+                <div class="content">
+                    <br />
+                    <div class="section-container">
+                        <p>
+                            <h2>Android application for diagnostic agricultural and food analysis based on image processing</h2>
+                            I've developed this Android app as a thesis, and aims to analyze absorption of light by various substances, in order thus to identify absorbance.
+                            <span id="dots1">...</span><span id="more1" style="display:none;">
+                                <br /><br />
+                                A number of libraries were used in the development of this application, such as OpenCV and GraphView, which being OpenSource and providing
+                                simple but accurate methods and was the ideal libraries for the development of the image processing algorithm and to graph the results.
+                                <br />
+                                Another aspect that was evaluated was the amount of computation that the device would have to deal with, having to work with images
+                                it is not a given that the performance could be up to the required role, for this reason the development relied on the NDK package
+                                giving the possibility to use C portions of the OpenCV library code for image processing.
+                                <br /><br />
+                                # Main feature <br />
+                                - Acquisition interface <br />
+                                - Photo gallery management <br />
+                                - Data analysis <br />
+                                - Presentation <br />
+                                <br /><br />
+                                <img class="projects-pic" src="./themes/images/project-android1.JPG">
+                                <br /><br />
+                                <h2>ARCHITECTURE</h2>
+                                <br />
+                                At the architectural level, the application consists of three main blocks, a block acquisition block, a processing block and a presentation block.
+                                <br />
+                                <img class="projects-pic" src="./themes/images/project-android2.JPG">
+                                <br /><br />
+                                <h3>ACQUISITION</h3>
+                                <br />
+                                This block is the one in charge of acquiring the images to be processed and manage the images saved in the internal memory by delegating the analysis of them to the processing block.
+                                <br />
+                                <img class="projects-pic" src="./themes/images/project-android3.JPG">
+                                <br />
+                                As per the image in fact, it is possible to acquire the photo
+                                through the device's camera or send the image to the processing block by fetching it directly within the file system.
+                                It is therefore possible to use the app to analyze images even not directly captured by the camera of the device on which it is installed.
+                                <br /><br />
+                                <h3>PROCESSING</h3>
+                                <br />
+                                The most substantial block in the entire architecture is the processing block. It is the part that handles all the functions implemented for image analysis and
+                                performs the most complex calculations.
+                                The image processing operations implemented are multiple, such as:
+                                <br />
+                                - Image channel decomposition<br />
+                                - Crop (image cropping)<br />
+                                - Pixel analysis<br />
+                                - Filters (binarization, saturation, etc...)<br />
+                                The most important function is the one that performs RGB averaging within the acquired image, and then performs calculations on absorbance and light intensity.
+                                The approach chosen was to perform this operation directly on the device, in order to have an immediate result under any condition and at any time.
+                                <br />
+                                <img class="projects-pic" src="./themes/images/project-android4.JPG">
+                                <br />
+                                <br /><br />
+                                <h3>PRESENTATION</h3>
+                                <br />
+                                The last block has the task of showing the user the results obtained after the processing phase, this is a definitely important block that requires simplicity and cleanliness of the interface.
+                                A simple interface was designed trying to think in the perspective of the final user so that he could have access to all the results on a single page.
+                                <br />
+                                <img class="projects-pic" src="./themes/images/project-android5.JPG">
+                                <br />
+                            </span>
+                        </p>
+                        <a class="contrast-link" onclick="readMore(1)" id="myBtn1">> More</a>
+                        <br />
+                        <br />
+                        <h3>Tech</h3>
+                        <p class="tags-container">
+                            <span class="tags">Android SDK</span> <span class="tags">Android SDK</span> <span class="tags">C</span> <span class="tags">OpenCV</span>  <span class="tags">GraphView</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <div class="content-container hidden-div">
 
@@ -100,6 +292,38 @@
                     <div class="section-container">
                         <h3 class="title"><i class="fa-solid fa-building"></i> Work experiences</h3>
                         <div class="resume-container">
+                        <!-- iSolutions -->
+                            <div>
+                                <a href="https://www.isolutions.it/"><img class="resume-image" src="./themes/images/resume/is.png"></a>
+                            </div>
+                            <div class="resume-description-border">
+                                <div>
+                                    <h3>iSolutions software engineering</h3>
+                                    <h3>Software Developer | .NET, C#, SQL</h3>
+                                    <h4>Full Time</h4>
+                                    <h5>Noceto, Emilia Romagna, Italy</h5>
+                                    <h5>Jan 2025 - Present</h5><br />
+                                    <p>
+                                        As a Software Developer, I’m responsible for the development and maintenance of the company’s core software products.
+                                        <br />
+                                        My work focuses on designing, implementing, and optimizing robust applications using C# and SQL, primarily within the .NET framework (including some legacy components in VB).
+                                        <br />
+                                        I also work across the web stack, handling HTML, CSS, JavaScript, and Bootstrap to ensure responsive and user-friendly interfaces.
+                                        <br />
+                                        I’m passionate about writing clean, efficient code and continuously improving existing systems to meet evolving business needs.
+                                    </p>
+                                    <p class="tags-container">
+                                        <span class="tags">.NET</span>
+                                        <span class="tags">C#</span>
+                                        <span class="tags">SQL</span>
+                                        <span class="tags">PostgreSQL</span>
+                                        <span class="tags">HTML</span>
+                                        <span class="tags">CSS</span>
+                                        <span class="tags">Javascript</span>
+                                    </p>
+                                </div>
+                            </div>
+
                             <!-- iSolutions -->
                             <div>
                                 <a href="https://www.isolutions.it/"><img class="resume-image" src="./themes/images/resume/is.png"></a>
@@ -110,7 +334,7 @@
                                     <h3>NOC Team Manager</h3>
                                     <h4>Full Time</h4>
                                     <h5>Noceto, Emilia Romagna, Italy</h5>
-                                    <h5>May 2022 - Present</h5><br />
+                                    <h5>May 2022 - Jan 2025</h5><br />
                                     <p>
                                         I oversaw the monitoring and management of both AWS cloud and on-premises infrastructures, ensuring optimal performance and system reliability.
                                         <br />
@@ -333,149 +557,6 @@
 
                 </div>
             </div>
-
-            <!-- PROJECTS -->
-            <div class="content-container hidden-div">
-                <!-- Android application -->
-                <div class="content">
-                    <h1 class="page-title">Projects.</h1>
-                    <br />
-                    <div class="section-container">
-                        <p>
-                            <h2>Android application for diagnostic agricultural and food analysis based on image processing</h2>
-                            I've developed this Android app as a thesis, and aims to analyze absorption of light by various substances, in order thus to identify absorbance.
-                            <span id="dots1">...</span><span id="more1" style="display:none;">
-                                <br /><br />
-                                A number of libraries were used in the development of this application, such as OpenCV and GraphView, which being OpenSource and providing
-                                simple but accurate methods and was the ideal libraries for the development of the image processing algorithm and to graph the results.
-                                <br />
-                                Another aspect that was evaluated was the amount of computation that the device would have to deal with, having to work with images
-                                it is not a given that the performance could be up to the required role, for this reason the development relied on the NDK package
-                                giving the possibility to use C portions of the OpenCV library code for image processing.
-                                <br /><br />
-                                # Main feature <br />
-                                - Acquisition interface <br />
-                                - Photo gallery management <br />
-                                - Data analysis <br />
-                                - Presentation <br />
-                                <br /><br />
-                                <img class="projects-pic" src="./themes/images/project-android1.JPG">
-                                <br /><br />
-                                <h2>ARCHITECTURE</h2>
-                                <br />
-                                At the architectural level, the application consists of three main blocks, a block acquisition block, a processing block and a presentation block.
-                                <br />
-                                <img class="projects-pic" src="./themes/images/project-android2.JPG">
-                                <br /><br />
-                                <h3>ACQUISITION</h3>
-                                <br />
-                                This block is the one in charge of acquiring the images to be processed and manage the images saved in the internal memory by delegating the analysis of them to the processing block.
-                                <br />
-                                <img class="projects-pic" src="./themes/images/project-android3.JPG">
-                                <br />
-                                As per the image in fact, it is possible to acquire the photo
-                                through the device's camera or send the image to the processing block by fetching it directly within the file system.
-                                It is therefore possible to use the app to analyze images even not directly captured by the camera of the device on which it is installed.
-                                <br /><br />
-                                <h3>PROCESSING</h3>
-                                <br />
-                                The most substantial block in the entire architecture is the processing block. It is the part that handles all the functions implemented for image analysis and
-                                performs the most complex calculations.
-                                The image processing operations implemented are multiple, such as:
-                                <br />
-                                - Image channel decomposition<br />
-                                - Crop (image cropping)<br />
-                                - Pixel analysis<br />
-                                - Filters (binarization, saturation, etc...)<br />
-                                The most important function is the one that performs RGB averaging within the acquired image, and then performs calculations on absorbance and light intensity.
-                                The approach chosen was to perform this operation directly on the device, in order to have an immediate result under any condition and at any time.
-                                <br />
-                                <img class="projects-pic" src="./themes/images/project-android4.JPG">
-                                <br />
-                                <br /><br />
-                                <h3>PRESENTATION</h3>
-                                <br />
-                                The last block has the task of showing the user the results obtained after the processing phase, this is a definitely important block that requires simplicity and cleanliness of the interface.
-                                A simple interface was designed trying to think in the perspective of the final user so that he could have access to all the results on a single page.
-                                <br />
-                                <img class="projects-pic" src="./themes/images/project-android5.JPG">
-                                <br />
-                            </span>
-                        </p>
-                        <a class="contrast-link" onclick="readMore(1)" id="myBtn1">> More</a>
-                        <br />
-                        <br />
-                        <h3>Tech</h3>
-                        <p class="tags-container">
-                            <span class="tags">Android SDK</span> <span class="tags">Android SDK</span> <span class="tags">C</span> <span class="tags">OpenCV</span>  <span class="tags">GraphView</span>
-                        </p>
-                    </div>
-                </div>
-                <!-- Android application -->
-                <div class="content">
-                    <br />
-                    <div class="section-container">
-                        <p>
-                            <h2>NOC team in iSolutions</h2>
-                            iSolutions has always paid special attention to monitoring its applications and its customers’ architectures.
-                            <span id="dots2">...</span><span id="more2" style="display:none;">
-                                For this reason, the company decided to invest in the development of a proprietary application, iSAlert, and the introduction of the NOC team, which we will discuss below, in order to monitor and provide an extremely proactive service to its customers.
-
-                                <br /><br />
-                                Read my full article at: <a href="https://labs.isolutions.it/2022/09/30/isalert-and-noc-team/">labs.isolutions.it</a>
-                                <br />
-                                <br />
-                                <br />
-
-                            </span>
-                        </p>
-                        <a class="contrast-link" onclick="readMore(2)" id="myBtn2">> More</a>
-                        <br />
-                        <br />
-                        <h3>Tech</h3>
-                        <p class="tags-container">
-                            <span class="tags">.NET</span> <span class="tags">SQL</span>  <span class="tags">C#</span>
-                            <span class="tags">VB</span> <span class="tags">HTML</span>  <span class="tags">CSS</span> <span class="tags">Git</span> <span class="tags">Grafana</span>
-                            <span class="tags">Project management</span>
-                        </p>
-                    </div>
-                </div>
-
-
-
-                 <!-- Fun PkmnGame -->
-                <div class="content">
-                    <br />
-                    <div class="section-container">
-                        <p>
-                            <h2>Javascript Pokémon battle game</h2>
-                            For fun, I created a Pokémon battle game using JavaScript!
-                            <span id="dots3">...</span><span id="more3" style="display:none;">
-                                I used JavaScript for all the character movement, hit detection, health bars, and animations, and made it all run smoothly in the browser.
-                                It was a blast combining the Pokémon world with classic arcade-style fighting mechanics!
-                            <br /><br />
-                                Repo: <a href="https://github.com/OniGian91/pkmnFighters">pkmnFighters</a>
-                                <iframe src="https://onigian91.github.io/pkmnFighters/"  style ="width: 100%;height: 90vh; border: none;"></iframe>
-   
-              
-                                <br />
-                                <br />
-                                <br />
-
-                            </span>
-                        </p>
-                        <a class="contrast-link" onclick="readMore(3)" id="myBtn3">> More</a>
-                        <br />
-                        <br />
-                        <h3>Tech</h3>
-                        <p class="tags-container">
-                            <span class="tags">Javascript</span> <span class="tags">HTML</span>  <span class="tags">css</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
 
             <!-- CONTACT -->
             <div class="content-container hidden-div">
